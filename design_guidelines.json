@@ -1,0 +1,140 @@
+{
+  "typography": {
+    "font_family": {
+      "heading": "Manrope, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "heading": "600 (SemiBold) or 800 (ExtraBold)",
+      "body": "400 (Regular) or 500 (Medium)"
+    },
+    "tracking": {
+      "heading": "-0.02em (tight)",
+      "body": "0 (normal)",
+      "overline": "0.1em (wide)"
+    },
+    "instructions": "Import Manrope from Google Fonts. Use it for all h1-h6. Use Inter for p, span, input, button."
+  },
+  "colors": {
+    "theme_name": "Organic Clinical (Trust & Calm)",
+    "light_mode": {
+      "background": "hsl(150, 10%, 98%)",
+      "foreground": "hsl(160, 40%, 10%)",
+      "card": "hsl(0, 0%, 100%)",
+      "card_foreground": "hsl(160, 40%, 10%)",
+      "popover": "hsl(0, 0%, 100%)",
+      "popover_foreground": "hsl(160, 40%, 10%)",
+      "primary": "hsl(170, 50%, 25%)",
+      "primary_foreground": "hsl(0, 0%, 100%)",
+      "secondary": "hsl(150, 20%, 94%)",
+      "secondary_foreground": "hsl(170, 50%, 25%)",
+      "muted": "hsl(150, 10%, 94%)",
+      "muted_foreground": "hsl(160, 10%, 45%)",
+      "accent": "hsl(14, 80%, 60%)",
+      "accent_foreground": "hsl(0, 0%, 100%)",
+      "destructive": "hsl(0, 84.2%, 60.2%)",
+      "destructive_foreground": "hsl(0, 0%, 98%)",
+      "border": "hsl(160, 10%, 90%)",
+      "input": "hsl(160, 10%, 90%)",
+      "ring": "hsl(170, 50%, 25%)"
+    },
+    "dark_mode": {
+      "background": "hsl(160, 30%, 5%)",
+      "foreground": "hsl(150, 10%, 98%)",
+      "card": "hsl(160, 25%, 8%)",
+      "card_foreground": "hsl(150, 10%, 98%)",
+      "popover": "hsl(160, 25%, 8%)",
+      "popover_foreground": "hsl(150, 10%, 98%)",
+      "primary": "hsl(170, 50%, 45%)",
+      "primary_foreground": "hsl(160, 30%, 5%)",
+      "secondary": "hsl(160, 20%, 15%)",
+      "secondary_foreground": "hsl(150, 10%, 98%)",
+      "muted": "hsl(160, 20%, 15%)",
+      "muted_foreground": "hsl(150, 10%, 65%)",
+      "accent": "hsl(14, 80%, 60%)",
+      "accent_foreground": "hsl(0, 0%, 100%)",
+      "destructive": "hsl(0, 62.8%, 30.6%)",
+      "destructive_foreground": "hsl(0, 0%, 98%)",
+      "border": "hsl(160, 20%, 15%)",
+      "input": "hsl(160, 20%, 15%)",
+      "ring": "hsl(170, 50%, 45%)"
+    },
+    "usage_rules": "Do NOT use generic blue. Use the 'primary' (Deep Teal) for main actions. Use 'accent' (Coral) sparingly for urgent CTAs or badges. Backgrounds should never be pure white in light mode, use the tinted off-white."
+  },
+  "layout": {
+    "spacing_scale": "Use 2x standard spacing. If you think p-4 is enough, use p-8.",
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "border_radius": "rounded-xl (0.75rem) for cards, rounded-full for buttons",
+    "grids": {
+      "landing_hero": "Bento Grid Mode A (Tetris). Asymmetric. Hero image col-span-8, supporting text col-span-4.",
+      "clinic_list": "Grid cols-1 md:cols-2 lg:cols-3. Gap-8.",
+      "comparison_table": "Sticky header. Row highlighting on hover. 'Tracing Beam' effect on the 'Best Value' column."
+    }
+  },
+  "components": {
+    "buttons": {
+      "style": "Pill shaped (rounded-full).",
+      "primary": "bg-primary text-primary-foreground hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+    },
+    "cards": {
+      "style": "Flat with subtle border in light mode. Soft glow in dark mode.",
+      "classes": "bg-card border border-border/50 shadow-sm hover:shadow-md transition-all duration-300"
+    },
+    "inputs": {
+      "style": "Tall and airy. h-12 or h-14.",
+      "classes": "bg-input/20 border-transparent focus:border-primary focus:ring-2 focus:ring-primary/20 rounded-lg"
+    },
+    "navigation": {
+      "style": "Glassmorphism sticky header.",
+      "classes": "backdrop-blur-xl bg-background/70 border-b border-border/40 sticky top-0 z-50"
+    }
+  },
+  "images": {
+    "hero_section": {
+      "url": "https://images.unsplash.com/photo-1590905775253-a4f0f3c426ff?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxoYXBweSUyMGRpdmVyc2UlMjBwZW9wbGUlMjBwb3J0cmFpdHMlMjBzbWlsaW5nJTIwbmF0dXJhbCUyMGNsb3NlJTIwdXB8ZW58MHx8fHwxNzY3MDU0ODgzfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Happy patient smiling naturally",
+      "category": "hero"
+    },
+    "clinic_placeholders": [
+      {
+        "url": "https://images.unsplash.com/photo-1642844819197-5f5f21b89ff8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkZW50YWwlMjBjbGluaWMlMjBpbnRlcmlvciUyMHJlY2VwdGlvbiUyMGJyaWdodHxlbnwwfHx8fDE3NjcwNTQ4ODF8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Modern dental clinic interior"
+      },
+      {
+        "url": "https://images.pexels.com/photos/6812475/pexels-photo-6812475.jpeg",
+        "alt": "Clean dental reception"
+      }
+    ],
+    "doctor_avatars": [
+      {
+        "url": "https://images.unsplash.com/photo-1565090567208-c8038cfcf6cd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwyfHxkZW50aXN0JTIwZG9jdG9yJTIwcHJvZmVzc2lvbmFsJTIwcG9ydHJhaXQlMjBmcmllbmRseXxlbnwwfHx8fDE3NjcwNTQ4ODV8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Professional dentist female"
+      },
+      {
+        "url": "https://images.pexels.com/photos/7465698/pexels-photo-7465698.jpeg",
+        "alt": "Professional dentist male"
+      }
+    ]
+  },
+  "universal_guidelines": {
+    "anti_ai_rules": [
+      "Do NOT use Inter for headings. Use Manrope.",
+      "Do NOT use generic blue (#3B82F6) for primary actions. Use the defined Teal.",
+      "Do NOT center everything. Use asymmetric layouts.",
+      "Do NOT use gradients for backgrounds. Use solid colors or subtle noise textures.",
+      "Do NOT use 'Lorem Ipsum'. Use realistic dental copy (e.g., 'Root Canal', 'Invisalign', 'Dr. Smith')."
+    ],
+    "accessibility": {
+      "contrast": "Ensure 4.5:1 contrast ratio for text.",
+      "focus_states": "Visible focus rings on all interactive elements.",
+      "motion": "Respect prefers-reduced-motion."
+    },
+    "testing": {
+      "attribute": "data-testid",
+      "format": "kebab-case (e.g., 'clinic-card-title', 'search-filter-button')"
+    }
+  },
+  "instructions_to_main_agent": "1. Update tailwind.config.js with the colors provided. 2. Install 'lucide-react' for icons. 3. Create the 'Manrope' font import in index.css. 4. Build the Landing Page using the Bento Grid strategy. 5. Build the Comparison Page using the 'Tracing Beam' concept for the best value column."
+}
