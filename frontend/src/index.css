@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+code {
+    font-family: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+    :root {
+        --background: 150 10% 98%;
+        --foreground: 160 40% 10%;
+        --card: 0 0% 100%;
+        --card-foreground: 160 40% 10%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 160 40% 10%;
+        --primary: 170 50% 25%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 150 20% 94%;
+        --secondary-foreground: 170 50% 25%;
+        --muted: 150 10% 94%;
+        --muted-foreground: 160 10% 45%;
+        --accent: 14 80% 60%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 160 10% 90%;
+        --input: 160 10% 90%;
+        --ring: 170 50% 25%;
+        --chart-1: 12 76% 61%;
+        --chart-2: 173 58% 39%;
+        --chart-3: 197 37% 24%;
+        --chart-4: 43 74% 66%;
+        --chart-5: 27 87% 67%;
+        --radius: 0.75rem;
+    }
+    
+    .dark {
+        --background: 160 30% 5%;
+        --foreground: 150 10% 98%;
+        --card: 160 25% 8%;
+        --card-foreground: 150 10% 98%;
+        --popover: 160 25% 8%;
+        --popover-foreground: 150 10% 98%;
+        --primary: 170 50% 45%;
+        --primary-foreground: 160 30% 5%;
+        --secondary: 160 20% 15%;
+        --secondary-foreground: 150 10% 98%;
+        --muted: 160 20% 15%;
+        --muted-foreground: 150 10% 65%;
+        --accent: 14 80% 60%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 160 20% 15%;
+        --input: 160 20% 15%;
+        --ring: 170 50% 45%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-muted;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+}
+
+/* Staggered animations */
+.stagger-1 { animation-delay: 0.1s; }
+.stagger-2 { animation-delay: 0.2s; }
+.stagger-3 { animation-delay: 0.3s; }
+.stagger-4 { animation-delay: 0.4s; }
+
+/* Glass effect */
+.glass {
+    @apply backdrop-blur-xl bg-background/70 border border-border/40;
+}
+
+/* Best value highlight */
+.best-value {
+    @apply relative;
+}
+
+.best-value::before {
+    content: '';
+    @apply absolute inset-0 bg-primary/5 rounded-xl pointer-events-none;
+}
+
+/* Map container */
+.leaflet-container {
+    @apply rounded-xl;
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+}

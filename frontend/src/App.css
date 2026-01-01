@@ -1,0 +1,137 @@
+/* DentiCompare Custom Styles */
+
+/* Hero section gradient overlay */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--primary) / 0.05) 0%,
+    transparent 50%,
+    hsl(var(--accent) / 0.03) 100%
+  );
+}
+
+/* Card hover effects */
+.clinic-card {
+  @apply transition-all duration-300;
+}
+
+.clinic-card:hover {
+  @apply shadow-lg -translate-y-1;
+}
+
+/* Search input styling */
+.search-input {
+  @apply h-14 text-lg bg-background/50 border-2 border-transparent;
+  @apply focus:border-primary focus:ring-4 focus:ring-primary/10;
+  @apply transition-all duration-200;
+}
+
+/* Comparison table */
+.comparison-table {
+  @apply w-full border-collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+  @apply p-4 text-left border-b border-border;
+}
+
+.comparison-table th {
+  @apply font-semibold text-muted-foreground uppercase text-sm tracking-wide;
+}
+
+/* Best value column highlight */
+.best-value-column {
+  @apply bg-primary/5 relative;
+}
+
+.best-value-column::before {
+  content: '';
+  @apply absolute top-0 left-0 right-0 h-1 bg-primary rounded-t;
+}
+
+/* Rating stars */
+.rating-star {
+  @apply w-4 h-4 text-yellow-500 fill-current;
+}
+
+/* Process steps */
+.process-step {
+  @apply relative pl-8 pb-6;
+}
+
+.process-step::before {
+  content: '';
+  @apply absolute left-3 top-2 w-2 h-2 rounded-full bg-primary;
+}
+
+.process-step:not(:last-child)::after {
+  content: '';
+  @apply absolute left-[14px] top-4 w-0.5 h-full bg-border;
+}
+
+/* Map placeholder */
+.map-container {
+  @apply rounded-xl overflow-hidden border border-border;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+  @apply transform transition-transform duration-300;
+}
+
+.mobile-menu.open {
+  @apply translate-x-0;
+}
+
+.mobile-menu.closed {
+  @apply translate-x-full;
+}
+
+/* Loading skeleton */
+.skeleton {
+  @apply animate-pulse bg-muted rounded;
+}
+
+/* Price tag */
+.price-tag {
+  @apply inline-flex items-center px-3 py-1 rounded-full;
+  @apply bg-primary/10 text-primary font-semibold;
+}
+
+/* Badge styles */
+.badge-warranty {
+  @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium;
+  @apply bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400;
+}
+
+.badge-duration {
+  @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-medium;
+  @apply bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400;
+}
+
+/* Floating CTA */
+.floating-cta {
+  @apply fixed bottom-6 left-1/2 -translate-x-1/2 z-50;
+  @apply px-6 py-3 rounded-full shadow-2xl;
+  @apply bg-primary text-primary-foreground;
+  @apply flex items-center gap-2 font-semibold;
+  @apply transition-all duration-300 hover:scale-105;
+}
+
+/* Treatment icon container */
+.treatment-icon {
+  @apply w-12 h-12 rounded-xl flex items-center justify-center;
+  @apply bg-primary/10 text-primary;
+}
+
+/* Section divider */
+.section-divider {
+  @apply relative py-8;
+}
+
+.section-divider::before {
+  content: '';
+  @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2;
+  @apply w-24 h-0.5 bg-gradient-to-r from-transparent via-border to-transparent;
+}
