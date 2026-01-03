@@ -59,6 +59,7 @@ export default function Landing() {
             </p>
 
 <form action="https://formspree.io/f/mkogvpoq" method="POST">
+  <input type="hidden" name="_redirect" value="https://savely.es/gracias.html">
   <input
     type="email"
     name="email"
@@ -76,6 +77,9 @@ export default function Landing() {
   />
 
               <button
+                onClick={() => {
+  window.gtag && window.gtag("event", "lead_waitlist");
+}}
                 type="submit"
                 style={{
                   width: "100%",
