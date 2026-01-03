@@ -77,24 +77,26 @@ export default function Landing() {
   />
 
               <button
-                onClick={() => {
-  window.gtag && window.gtag("event", "lead_waitlist");
-}}
-                type="submit"
-                style={{
-                  width: "100%",
-                  padding: "14px",
-                  borderRadius: 12,
-                  border: "none",
-                  background: "#4f63c6", // 🔒 BOTÓN MARCA
-                  color: "white",
-                  fontSize: 16,
-                  fontWeight: 600,
-                  cursor: "pointer",
-                }}
-              >
-                Unirme a la lista de espera
-              </button>
+  type="submit"
+  onClick={() => {
+    if (window.gtag) {
+      window.gtag("event", "lead_waitlist");
+    }
+  }}
+  style={{
+    width: "100%",
+    padding: "14px",
+    borderRadius: 12,
+    border: "none",
+    background: "#4f63c6",
+    color: "white",
+    fontSize: 16,
+    fontWeight: 600,
+    cursor: "pointer",
+  }}
+>
+  Unirme a la lista de espera
+</button>
             </form>
 
             <p
