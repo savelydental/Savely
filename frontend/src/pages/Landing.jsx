@@ -58,7 +58,7 @@ export default function Landing() {
               calidad y opiniones reales en un solo lugar.
             </p>
 
-<form action="https://formspree.io/f/xvzggdyl" method="POST">
+<form action="https://formspree.io/f/mkogvpoq" method="POST">
   <input
     type="email"
     name="email"
