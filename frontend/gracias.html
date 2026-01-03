@@ -15,38 +15,40 @@
   </script>
 
   <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: #0B1220; /* ajusta si quieres */
-      color: #ffffff;
-      font-family: system-ui, -apple-system, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .box {
-      max-width: 420px;
-      padding: 24px;
-    }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
-    p {
-      opacity: 0.8;
-      line-height: 1.5;
-    }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <h1>¡Todo listo! 🎉</h1>
-    <p>
-      Ya estás en la lista de Savely.<br />
-      Te avisaremos en cuanto abramos.
-    </p>
-  </div>
-</body>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f4f6fb;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      }
+      .card {
+        background: white;
+        padding: 40px;
+        border-radius: 16px;
+        text-align: center;
+        max-width: 420px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+      h1 {
+        margin-bottom: 12px;
+        color: #1f2937;
+      }
+      p {
+        color: #4b5563;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>¡Gracias por apuntarte!</h1>
+      <p>
+        Te avisaremos en cuanto Savely esté listo para ayudarte a encontrar la
+        mejor clínica dental.
+      </p>
+    </div>
+  </body>
 </html>
